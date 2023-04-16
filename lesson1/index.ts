@@ -30,4 +30,3 @@ const logBrtMsg = (isBirthday: boolean, useName: string, age: number ): string =
 }
 
 logBrtMsg( isBirthdayData, useNameData, ageData )
-
