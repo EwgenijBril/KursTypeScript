@@ -17,10 +17,13 @@ const startServer = (protocol: "http" | "https", port: 3000 | 3001 ): "Server st
 
 startServer("https", 3001)
 
+type AnimationTimingFunc = "ease" | "ease-out" | "ease-in";
+type AnimationID = string | number ;
+
 const createAnimation = (
-    id: string | number, 
+    id: AnimationID, 
     animName: string, 
-    limingFunc: "ease" | "ease-out" | "ease-in" = "ease", 
+    limingFunc: AnimationTimingFunc = "ease", 
     duration: number, 
     iterCount: "infinite" | number 
 ): void => { 
