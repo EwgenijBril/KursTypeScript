@@ -1,14 +1,12 @@
-const serverNewConfig = {
+const serverNewConfig: BasicConfig = {
     protocol: 'https',
     port: 3001,
-    role: 'admin',
   
 }
 
-const backupConfig = {
+const backupConfig: BasicConfig = {
     protocol: "http",
     port: 3001,
-   
 }
 
 interface BasicConfig {
@@ -22,5 +20,5 @@ const startNewServer = (config: BasicConfig): "Server started" => {
     return "Server started"
 }
 
-startNewServer(serverNewConfig)
-startNewServer(backupConfig)
+startNewServer(serverNewConfig);
+startNewServer(backupConfig);
