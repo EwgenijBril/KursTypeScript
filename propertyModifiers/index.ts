@@ -17,8 +17,11 @@ const user: User = {
     addr: 'dkdfk'
 }
 
-const  dbName = '12345';
+let  dbName: string;
+sendUserData(user, "sdfdsfje")
+console.log(dbName!)
 
-const sendUserData = ( obj: User, db?: string ): void => {
-    console.log(obj.parents?.father?.toLowerCase(), db?.toLowerCase())
+function sendUserData ( obj: User, db?: string ): void  {
+    dbName = '12345'
+    console.log(obj.parents!.father?.toLowerCase(), db!.toLowerCase())
 }
