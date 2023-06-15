@@ -37,12 +37,19 @@ interface Ship {
 const repairVehicle = (vehicle: Car | Ship) => {
     if ( isCar(vehicle)) {
         vehicle.wheels
+    } else if (isShip(vehicle)) {
+        vehicle
     } else {
-        vehicle.sail
+        vehicle
     }
 }
 
 const isCar = (car: Car | Ship): car is Car => {
     // return "wheels" in car;
     return (car as Car).wheels.number !== undefined
+}
+
+const isShip = (ship: Car | Ship): ship is Ship => {
+    return "sail" in ship;
+   
 }
