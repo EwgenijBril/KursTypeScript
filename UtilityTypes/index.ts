@@ -41,4 +41,4 @@ const gameData: GameDataCurr = {
 
 type MyAnimation1 = "fade" | "swipe";
 type Direction1 = "in" | "out";
-type MyNewAnimation1 = `${MyAnimation}${Capitalize<Direction>}`
+type MyNewAnimation1 = `${MyAnimation1}${Capitalize<Direction1>}`
