@@ -1,9 +1,28 @@
-class Box {
+// class Box {
+//     width: number;
+//     height: number;
+//     volume: string;
+
+//     constructor(volume: string)
+//     constructor(width: number)
+
+//     constructor(widthOrVolume: number | string) {
+//         if (typeof widthOrVolume === "number") {
+//             this.width = widthOrVolume;
+//         } else {
+//             this.volume = widthOrVolume;
+//         }
+//         this.height = 500;
+//     }
+// }
+
+class Box<T> {
     width: number;
     height: number;
+    volume: string;
 
-    constructor(width: number) {
-        this.width = width;
+    constructor(widt: number) {
+        this.width = widt;
         this.height = 500;
     }
 }
